@@ -448,19 +448,20 @@ function photosItem(nn,str)
     // Функция нажатия купить
     function shoping(name)
     {
-      $('a[name="'+name+'"]').removeAttr("onClick");
-         $('a[name="'+name+'"]').html("В КОРЗИНЕ");
        if(localStorage.shop==undefined)
        {
            localStorage.shop=""
        }
        else
        {
+           
  arr = name.split(',')
 data=[]
 
 if(localStorage.shop.indexOf(arr[0])==-1)
 {
+
+    
 var data2={
                  iditem : arr[0],
                 price : arr[1],
@@ -474,6 +475,7 @@ if (localStorage.shop=="")
     }
         else
         {
+           
             string2=JSON.parse(localStorage.shop)
             for(i in string2){
             data.push(string2[i])
@@ -483,6 +485,8 @@ if (localStorage.shop=="")
 data.push(string)
 data=JSON.stringify(data)
 localStorage.shop=data
+$('a[name="'+name+'"]').removeAttr("onClick");
+$('a[name="'+name+'"]').html("В КОРЗИНЕ");
 //localStorage.shop=data
 //localStorage.shop.push(data)
 //alert("Товар "+arr[2]+ " добавлен в корзину!")
@@ -796,7 +800,7 @@ function logout()
         {
             alert("Вы будете перенаправлены на страницу авторизации Вконтакте!")
             url="https://oauth.vk.com/authorize?client_id=5939397&display=page&redirect_uri=http://dolce-vita.spb.ru/ws/get&scope=market,offline&response_type=code&v=5.63&state="+string.ssid+""
-            window.open(url)
+            window.open(url, "_system")
         }
     
         
