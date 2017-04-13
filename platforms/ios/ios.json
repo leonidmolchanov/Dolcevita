@@ -1,0 +1,64 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"PushbotsPlugin\"><param name=\"ios-package\" value=\"PushbotsPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "CFBundleURLTypes": []
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "ru.spb.dolcevita.app"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ru.spb.dolcevita.app"
+        },
+        "pushbots-cordova-plugin": {
+            "PACKAGE_NAME": "ru.spb.dolcevita.app"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "cordova-plugin-device.device",
+            "file": "plugins/cordova-plugin-device/www/device.js",
+            "pluginId": "cordova-plugin-device",
+            "clobbers": [
+                "device"
+            ]
+        },
+        {
+            "id": "pushbots-cordova-plugin.PushbotsPlugin",
+            "file": "plugins/pushbots-cordova-plugin/www/pushbots.js",
+            "pluginId": "pushbots-cordova-plugin",
+            "clobbers": [
+                "PushbotsPlugin"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-device": "1.1.5",
+        "cordova-plugin-whitelist": "1.3.2",
+        "pushbots-cordova-plugin": "1.4.4"
+    }
+}

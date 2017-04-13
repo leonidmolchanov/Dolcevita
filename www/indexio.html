@@ -1,0 +1,81 @@
+<html>
+<head>
+	<title>Test socket.io</title>
+	<script src="https://cdn.socket.io/socket.io-1.2.1.js"></script>
+	<script>
+        alert(window.localStorage.token)
+	var socket = io.connect('http://95.213.208.74:8888');
+	  
+        socket.on('eventClient', function (data) {
+       // for(var i in data ) {
+       //alert(i)
+        
+        //}
+           // string = JSON.parse(data.data);
+ document.getElementById("auth").innerHTML=data.data;
+            string = JSON.parse(data.data);
+            
+            if(string.ssid.length==0)
+{
+    document.getElementById("auth").innerHTML="Нет подключения" 
+}
+            
+else
+    {
+       document.getElementById("auth").innerHTML="Подключен" 
+    }
+            if(string.vkstatus=="token")
+                
+                {
+                    
+                document.getElementById("token").innerHTML=string.token
+                 document.getElementById("user_id").innerHTML=string.userid
+                  window.localStorage.setItem("token", string.token); 
+                     window.localStorage.setItem("userid", string.userid); 
+    socket.emit('eventServer', { data: 'token' });
+                    }
+                          else
+                {
+                    
+                }
+	});
+        
+        
+        
+	socket.emit('eventServer', { data: 'Hello Server' });
+    
+        
+    setInterval(function () {
+      socket.emit('eventServer', { data: 'Hello Server2' });
+}, 5000);        
+    
+ function node(){
+   document.getElementById("auth").innerHTML="adadada"  
+ }
+        
+        function vk()
+        {
+            alert(string.ssid)
+          socket.emit('eventServer', { data: 'token' });
+        }
+        
+    </script>
+</head>
+<body>
+    
+<span id="auth">Не подключен</span>
+    <br>
+    Номер токена: <span id="token">token</span>
+    
+    <br>
+     Номер юзера: <span id="user_id">123</span>
+    
+    <br>
+    <a href="#" onClick=" window.open('https://oauth.vk.com/authorize?client_id=5939397&display=page&redirect_uri=http://dolce-vita.spb.ru/ws/get&scope=market &response_type=code&v=5.63&state='+string.ssid+'', '_blank')">test</a>
+
+    
+    <a href="#" onClick="vk()">Вконтакте</a>
+    
+    
+    </body>
+</html>

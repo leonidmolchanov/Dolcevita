@@ -1,0 +1,59 @@
+<div class="pages">
+  <div data-page="shop" class="page no-toolbar no-navbar">
+    <div class="page-content">
+    
+	<div class="navbarpages">
+		<div class="navbar_left">
+			<div class="logo_text"><a href="index.html"><span>D</span>olce-vita</a></div>
+		</div>			
+		<a href="#" data-panel="left" class="open-panel">
+			<div class="navbar_right"><img src="images/icons/green/menu.png" alt="" title="" /></div>
+		</a>					
+	</div>
+     
+     <div id="pages_maincontent">
+      
+     <h2 class="page_title">ОБРАТНАЯ СВЯЗЬ</h2>
+      
+	<div class="page_single layout_fullwidth_padding" id="shop_div">
+    
+            <div class="tab">
+                <center>
+            <form class="cmxform" id="MailForm">
+            <input type="text" name="name" id="ContactName" value="" placeholder="Имя" class="form_input required" />
+           <br>
+            <input type="email" name="email" id="ContactEmail" value="" placeholder="E-mail" class="form_input required email" />
+            <br>
+            <textarea name="msg" id="ContactComment" placeholder="Сообщение" class="form_textarea textarea required" rows="" cols=""></textarea>
+                
+                <br>
+            <input type="submit" name="submit" class="tab-link button" id="submit" onClick="callback()" value="Отправить" />
+            </form>
+                </center>
+      </div>
+      
+      </div>
+      
+      
+    </div>
+  </div>
+    
+    
+   
+    
+    
+</div>
+<script type="text/javascript">
+
+ url = "https://api.vk.com/method/market.get?owner_id=-106034512&access_token=cf7648577a61dafb403e47dfe2f86c89cbbb28ff6c3d6fe332872824de541e1303ab1032ed1d930149405"
+$.ajax({
+            url: url,
+            dataType: "jsonp",
+            success: function(data) {
+            alert(data.response);
+               
+            
+            }
+    });
+alert("123")
+</script>

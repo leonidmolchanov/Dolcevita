@@ -1,0 +1,100 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"browser-package\" value=\"Device\" /></feature>",
+                            "count": 2
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ru.spb.dolcevita.app"
+        },
+        "pushbots-cordova-plugin": {
+            "PACKAGE_NAME": "ru.spb.dolcevita.app"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "ru.spb.dolcevita.app"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "ru.rout.rty.ru"
+        },
+        "cordova-plugin-socialvk": {
+            "VK_APP_ID": "5939397",
+            "PACKAGE_NAME": "ru.spb.dolcevita.app"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/pushbots-cordova-plugin/www/pushbots.js",
+            "id": "pushbots-cordova-plugin.PushbotsPlugin",
+            "pluginId": "pushbots-cordova-plugin",
+            "clobbers": [
+                "PushbotsPlugin"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-device/www/device.js",
+            "id": "cordova-plugin-device.device",
+            "pluginId": "cordova-plugin-device",
+            "clobbers": [
+                "device"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-device/src/browser/DeviceProxy.js",
+            "id": "cordova-plugin-device.DeviceProxy",
+            "pluginId": "cordova-plugin-device",
+            "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-device/www/device.js",
+            "id": "cordova-plugin-device.device",
+            "pluginId": "cordova-plugin-device",
+            "clobbers": [
+                "device"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-device/src/browser/DeviceProxy.js",
+            "id": "cordova-plugin-device.DeviceProxy",
+            "pluginId": "cordova-plugin-device",
+            "runs": true
+        },
+        {
+            "file": "plugins/pushbots-cordova-plugin/www/pushbots.js",
+            "id": "pushbots-cordova-plugin.PushbotsPlugin",
+            "pluginId": "pushbots-cordova-plugin",
+            "clobbers": [
+                "PushbotsPlugin"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-socialvk/www/social-vk.js",
+            "id": "cordova-plugin-socialvk.SocialVk",
+            "pluginId": "cordova-plugin-socialvk",
+            "clobbers": [
+                "SocialVk"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-whitelist": "1.3.2",
+        "pushbots-cordova-plugin": "1.4.4",
+        "cordova-plugin-device": "1.1.5",
+        "cordova-plugin-console": "1.0.6",
+        "cordova-plugin-socialvk": "1.0.4"
+    }
+}

@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+<link href="images/apple-touch-startup-image-320x460.png" media="(device-width: 320px)" rel="apple-touch-startup-image">
+<link href="images/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+<title>Dolce-Vita</title>
+<link rel="stylesheet" href="css/framework7.css">
+<link rel="stylesheet" href="style.css">
+<link type="text/css" rel="stylesheet" href="css/swipebox.css" />
+<link type="text/css" rel="stylesheet" href="css/animations.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">  
+  
+</head>
+<body id="mobile_wrap">
+
+    <div class="statusbar-overlay"></div>
+
+    <div class="panel-overlay"></div>
+
+    <div class="panel panel-left panel-reveal">
+        
+        
+			<nav class="sidebar-nav">
+				<ul>
+					<li><a href="index.html" class="close-panel"><img src="images/icons/white/home.png" alt="" title="" /><span>Главная</span></a></li>
+
+
+                     <li><a href="shop.html" onclick="shop(1)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Новинки</span></a></li>
+                    <li><a href="shop.html" onclick="shop(11)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>В подарок к покупке</span></a></li>
+                    <li><a href="shop.html" onclick="shop(2)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Мальчики с 0 до 1 года</span></a></li>
+					 <li><a href="shop.html" onclick="shop(3)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Мальчики с 1 до 5 лет</span></a></li>
+                     <li><a href="shop.html" onclick="shop(4)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Мальчики с 5 до 10 лет</span></a></li>
+                     <li><a href="shop.html" onclick="shop(5)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Мальчики с 10 до и старше</span></a></li>
+                     <li><a href="shop.html" onclick="shop(6)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Девочки с 0 до 1 года</span></a></li>
+					 <li><a href="shop.html" onclick="shop(7)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Девочки с 1 до 5 лет</span></a></li>
+                     <li><a href="shop.html" onclick="shop(8)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Девочки с 5 до 10 лет</span></a></li>
+                     <li><a href="shop.html" onclick="shop(9)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Девочки с 10 до и старше</span></a></li>
+                    <li><a href="shop.html" onclick="shop(12)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Разные детские мелочи</span></a></li>
+                       <li><a href="shop.html" onclick="shop(13)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Личный пристрой</span></a></li>
+                    <li><a href="shop.html" onclick="shop(10)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Все для школы</span></a></li>
+                    <li><a href="shop.html" onclick="shop(14)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Верхняя детская одежда</span></a></li>
+                    <li><a href="shop.html" onclick="shop(15)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Детская обувь</span></a></li>
+                    <li><a href="shop.html" onclick="shop(16)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Детские игрушки</span></a></li>
+                    <li><a href="shop.html" onclick="shop(17)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Детские книжки</span></a></li>
+                    <li><a href="shop.html" onclick="shop(18)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Все для будущих мам</span></a></li>
+                    <li><a href="shop.html" onclick="shop(19)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Женская одежда</span></a></li>
+                    <li><a href="shop.html" onclick="shop(25)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Мужская одежда</span></a></li>
+                    <li><a href="shop.html" onclick="shop(24)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Верхняя одежда для взрослых</span></a></li>
+                    <li><a href="shop.html" onclick="shop(23)" class="close-panel"><img src="images/icons/white/shop.png" alt="" title="" /><span>Взрослая обувь</span></a></li>
+                    <li><a href="about.html" class="close-panel"><img src="images/icons/white/mobile.png" alt="" title="" /><span>О нас</span></a></li>
+					<li><a href="contact.html" class="close-panel"><img src="images/icons/white/contact.png" alt="" title="" /><span>Обратная связь</span></a></li>
+				</ul>
+			</nav>
+    </div>
+
+    <div class="panel panel-right panel-reveal">
+      <div class="user_login_info">
+	  
+                <div class="user_thumb">  
+                  <div class="user_details">
+                   <p>Добрый день! <span id="lk_login"></span></p>
+                  </div>  
+ 
+                </div>
+				
+                  <nav class="user-nav">
+                    <ul>
+                      <li><a href="lksitting.html" onClick="lksitting('enter')" class="close-panel"><img src="images/icons/white/settings.png" alt="" title="" /><span>Настройки</span></a></li>
+                      <li><a href="shoping.html" onClick="shoping_check2()" class="close-panel"><img src="images/icons/white/briefcase.png" alt="" title="" /><span>Mои покупки</span></a></li>
+                      <li><a href="index.html" onClick="logout()" class="close-panel"><img src="images/icons/white/lock.png" alt="" title="" /><span>Выход</span></a></li>
+                    </ul>
+                  </nav>
+      </div>
+    </div>
+
+    <div class="views">
+
+      <div class="view view-main">
+
+
+
+        <div class="pages">
+
+          <div data-page="index" class="page homepage">
+            <div class="page-content homepagecontent">	
+
+                        <div class="homenavbar">
+                                <h1><span id="linkstatus">D</span>olce-vita</h1>
+                         <div id="auth"></div><div id="auth2"></div>
+                              
+					<a href="#" data-panel="left" class="open-panel">
+                            <div class="navbar_right"><img src="images/icons/white/menu.png" alt="" title="" />
+                         
+                        </div>
+				</a>		
+                             
+                            
+                        </div>
+						
+                  <!-- Slider -->
+                 <div class="swiper-container swiper-init" data-effect="slide" data-parallax="true" data-pagination=".swiper-pagination" data-paginationClickable="true">
+                    <div class="swiper-wrapper">
+                    
+                      <div class="swiper-slide">
+			 <img src="images/slider/logo.jpg" alt="" title="" />
+                       </div>
+              		   
+                    </div>
+                  </div>	
+		<!--  <div class="swiper-pagination"></div>						  
+			<center>sdsadas</center> -->
+			<nav class="main-nav">
+			<ul>
+				<!--<li><a href="#" data-popup=".popup-login" class="open-popup"><img src="images/icons/white/lock.png" alt="" title="" /><span>АВТОРИЗАЦИЯ</span></a></li> -->
+				<li><a href="shop.html"><img src="images/icons/white/shop.png" onclick="shop(1)" alt="" title="" /><span>МАГАЗИН</span></a></li>
+                <li><a  href="shoping.html" onClick="shoping_check2()"><img src="images/icons/white/briefcase.png" alt="" title="" /><span>КОРЗИНА</span></a></li>
+                <li><a  href="lksitting.html" onClick="lksitting('enter')"><img src="images/icons/white/settings.png" alt="" title="" /><span>НАСТРОЙКИ</span></a></li>
+                <li><a href="contact.html"><img src="images/icons/white/contact.png" alt="" title="" /><span>ОБРАТНАЯ СВЯЗЬ</span></a></li>
+                <div id="vkauth"><li><a href="#"  onClick="window.location.href='https://vk.com/club106034512';"><img src="images/icons/white/twitter.png" alt="" title="" /><span>ВКОНТАКТЕ</span></a></li></div>
+                <li><a href="index.html" onClick="logout()"><img src="images/icons/white/lock.png"  alt="" title="" /><span>ВЫХОД</span></a></li>
+			</ul>
+			</nav>	
+    
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+	
+    <!-- Login Popup -->
+    <div class="popup popup-login">
+        <div class="content-block">
+    
+          <div class="bottombarpages">
+       <div class="gallery_switch">        
+        <a href="#" id="view13" class="switcher active"><img src="images/switch_13_active.png" alt="Grid"></a>
+        <a href="#" id="view12" class="switcher"><img src="images/switch_12.png" alt="Grid"></a>
+        <a href="#" id="view11" class="switcher"><img src="images/switch_11.png" alt="List"></a>
+      </div>
+     </div>   
+            
+            <div id="pages_maincontent">
+      
+              <h2 class="page_title">ФОТОГАЛЕРЕЯ</h2>
+			  
+<div class="page_single layout_fullwidth">	  
+
+           
+
+              
+              <div class="tabs-animated-wrap photos_tabs">
+                    <div class="tabs">
+                          <div id="photos" class="tab active">
+                           
+                          </div>
+    
+                     
+ 
+                          
+                    </div>
+              </div> 
+			  
+			  
+   </div>       
+      
+
+                
+                
+   
+      </div>
+            
+            
+            
+            <div class="close_popup_button">
+                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Popup -->
+    <div class="popup popup-signup">
+        <div class="content-block">
+            <h4>РЕГИСТРАЦИЯ</h4>
+            <div class="loginform">
+                <form id="RegisterForm">
+                    <input type="text" name="Username" value="" class="form_input required" placeholder="Имя" />
+                    <input type="text" name="Email" value="" class="form_input required" placeholder="E-mail" />
+                    <input type="password" name="Password" value="" class="form_input required" placeholder="Пароль" />
+                    <input type="submit" name="submit" onClick="register(this.form.elements[1].value)" class="form_submit"  value="ЗАРЕГИСТРИРОВАТЬСЯ" />
+                </form>
+		
+            </div>
+            <div class="close_popup_button">
+                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>
+            </div>
+        </div>
+    </div>
+	
+    <!-- Forgot Password Popup -->
+    <div class="popup popup-forgot">
+        <div class="content-block">
+            <h4>Контактные данные</h4>
+            <div class="loginform">
+                <form id="PostForm">
+                    <input type="text" name="FIO" value="" class="form_input required" placeholder="ФИО" />
+                    <input type="text" name="country" value="" class="form_input required" placeholder="Страна" />
+                    <input type="text" name="street" value="" class="form_input required" placeholder="Улица" />
+                    <input type="text" name="home" value="" class="form_input required" placeholder="Дом" />
+                    <input type="text" name="flat" value="" class="form_input required" placeholder="Квартира" />
+                    <input type="text" name="region" value="" class="form_input required" placeholder="Регион" />
+                    <input type="text" name="city" value="" class="form_input required" placeholder="Город" />
+                    <input type="text" name="index" value="" class="form_input required" placeholder="Индекс" />
+                    <input type="text" name="telnumber" value="" class="form_input required" placeholder="Телефон" />
+                    <input type="text" name="email" value="" class="form_input required" placeholder="Email" />
+                    <input type="submit" name="submit" class="form_submit" id="submit" onClick="shoping_final()" value="Оформить заказ" />
+                </form>
+                
+            </div>
+            <div class="close_popup_button">
+                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>
+            </div>
+        </div>
+    </div>
+	
+    <!-- Social Icons Popup -->
+    <div class="popup popup-social">
+    <div class="content-block" id="OAuth">
+     sdadasdas
+      <div class="close_popup_button"><a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a></div>
+    </div>
+    </div>
+    
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js" ></script>
+<script type="text/javascript" src="js/framework7.js"></script>
+<script type="text/javascript" src="js/jquery.swipebox.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/email.js"></script>
+<script type="text/javascript" src="js/audio.min.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/selectFx.js"></script>
+<script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+   <script src="https://cdn.socket.io/socket.io-1.2.1.js"></script>
+	<script>
+       // alert(localStorage.userid)
+        
+        //Подключаемся к серверу
+	var socket = io.connect('http://95.213.208.74:8888');
+        socket.on('eventClient', function (data) {
+       // for(var i in data ) {
+       //alert(i)
+        
+        //}
+           // string = JSON.parse(data.data);
+            
+            //Парсим ответ
+           
+            string = JSON.parse(data.data);
+            // Условие если ответа нет
+            
+       
+            
+            if(string.ssid.length==0)
+{
+    document.getElementById("linkstatus").innerHTML="<font color=red>D</font>" 
+}
+ //Если есть           
+else
+    {
+       document.getElementById("linkstatus").innerHTML="D" 
+       
+    // Если статус подключение false
+    if(string.vkstatus=="false")
+        {
+         document.getElementById("vkauth").innerHTML="" 
+        $("#vkauth").prepend('<li><a href="#" onClick="vkauth()"><img src="images/icons/white/twitter.png" alt="" title="" /><span>Необходима авторизация</span></a></li>');   
+            
+            if(typeof localStorage.token !== "undefined")
+                {
+if(localStorage.token== "undefined")
+    {                
+       document.getElementById("vkauth").innerHTML="" 
+        $("#vkauth").prepend('<li><a href="#" onClick="vkauth()"><img src="images/icons/white/twitter.png" alt="" title="" /><span>Необходима авторизация</span></a></li>'); 
+    }
+                    else
+                        {
+                          document.getElementById("vkauth").innerHTML="" 
+  $("#vkauth").prepend('<li><a href="#"  onClick="window.location.href="https://vk.com/club106034512";><img src="images/icons/white/twitter.png" alt="" title="" /><span>Авторизирован</span></a></li>');    
+                        }
+                }
+else
+    {
+        document.getElementById("vkauth").innerHTML="" 
+        $("#vkauth").prepend('<li><a href="#" onClick="vkauth()"><img src="images/icons/white/twitter.png" alt="" title="" /><span>Необходима авторизация</span></a></li>');       
+    }
+            
+          
+        }
+        else
+            {
+                document.getElementById("vkauth").innerHTML="" 
+  $("#vkauth").prepend('<li><a href="#"  onClick="window.location.href="https://vk.com/club106034512";><img src="images/icons/white/twitter.png" alt="" title="" /><span>Авторизирован</span></a></li>');
+            }
+    
+    
+    }
+           
+           
+            
+            //Если токен получен
+            if(string.vkstatus=="token")
+                
+                {
+            //alert("token"+string.token)  
+            socket.emit('eventServer', { data: 'token' });
+                    localStorage.token=string.token;
+                    localStorage.userid=string.userid;
+                document.getElementById("token").innerHTML=string.token
+                 document.getElementById("user_id").innerHTML=string.userid
+                  window.localStorage.setItem("token", string.token); 
+                     window.localStorage.setItem("userid", string.userid); 
+    
+                    }
+                          else
+                {
+                    
+                }
+	});
+        
+   
+          socket.on("disconnect", function () {   
+                // если связь потеряна - пишем об этом (почему спустя полсекунды, объясню чуть ниже)
+            setTimeout(function () {
+               document.getElementById("linkstatus").innerHTML="<font color=red>D</font>"
+            }, 500);                        
+        });
+
+        
+        
+	socket.emit('eventServer', { data: 'Hello Server' });
+    
+    //Цикл постоянной связи с серверов    
+    setInterval(function () {
+      socket.emit('eventServer', { data: 'Hello Server2' });
+}, 5000);        
+  
+        
+          
+        
+        
+           // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+    // device APIs are available
+    function onDeviceReady() {
+
+       window.plugins.PushbotsPlugin.initialize("58cffbdb4a9efab5c58b4567", {"android":{"sender_id":"75572397337"}});
+        this.receivedEvent('deviceready');
+    }
+   
+ 
+    
+    
+   // Функция вывода товара 
+    function shop(album){
+                 
+       //Делаем запрос вконтакте 
+ url = "https://api.vk.com/method/market.get?owner_id=-106034512&count=200&extended=1&album_id="+album+"&access_token="+localStorage.token+""
+hashtag="all";
+ query="";
+ $.ajax({
+            url: url,
+            dataType: "jsonp",
+            success: function(data) {
+                if(data.error==undefined)
+                    {
+                    
+              document.getElementById("shop_div").innerHTML =""; 
+                        
+                        //Запускаем цикл ФОРМИРОВАНИЯ ТАБЛИЦЫ ТОВАРА
+for (i = 1; i < data.response.length; i++) {
+
+              description=data.response[i].description;
+
+   // alert(data.response[i].description);
+            title=data.response[i].title;
+                price=data.response[i].price.amount/100;
+                thumb_photo=data.response[i].thumb_photo;
+       photos=JSON.stringify(data.response);
+    lot_id=data.response[i].id;
+    lot_name=""+lot_id+","+price+","+title+"";
+    if(hashtag=="all")
+        {
+            //Добавляем товары
+     $("#shop_div").prepend('<ul class="shop_items"><li><div class="shop_thumb"><a href="#" data-popup=".popup-login" class="open-popup" name="'+i+'" onClick="photosItem(this.name,photos)"><img src="'+thumb_photo+'" alt="" title=""></a></div><div class="shop_item_details"><h4><a href="shop-item.html">'+title+'</a></h4><div class="shop_item_price">'+price+' Рублей</div><a href="#" onClick=shoping(this.name) name="'+lot_name+'" id="addtocart">КУПИТЬ</a>'+description+'</div></li></ul>'); 
+        }
+    else{
+        
+    
+       if(description.indexOf(hashtag)==0){
+            $("#shop_div").prepend('<ul class="shop_items"><li><div class="shop_thumb"><a href="shop-item.html"><img src="'+thumb_photo+'" alt="" title=""></a></div><div class="shop_item_details"><h4><a href="shop-item.html">'+title+'</a></h4><div class="shop_item_price">'+price+' Рублей</div><a  href="#" onClick=shoping(this.name) name="'+lot_name+'" id="addtocart">КУПИТЬ</a>'+description+'</div></li></ul>'); 
+ 
+       }
+    else
+        {
+            
+        }
+        
+    }
+}
+       
+                             }
+                else
+                    {
+                        alert("Необходима авторизиация Вконтакте!")
+                        localStorage.token="undefined"
+                    }
+                         
+            }
+    });
+                 
+     
+                  
+    }
+    
+ // Функция вывода доп фотографий  
+function photosItem(nn,str)
+        {
+            str=JSON.parse(str)
+            nn=Number(nn)
+            document.getElementById("photos").innerHTML="" 
+            for(i in str[nn].photos){
+             $("#photos").prepend('<ul id="photoslist" class="photo_gallery_11"><li><a rel="gallery-3" href="images/photos/photo1.jpg" title="Photo title" class="swipebox"><img src='+str[nn].photos[i].src_big+' alt="image"/></a></li><div class="clearleft"></div></ul>'); 
+            }
+            //alert(JSON.stringify(str[nn].photos))
+            
+        }
+    // Функция нажатия купить
+    function shoping(name)
+    {
+      $('a[name="'+name+'"]').removeAttr("onClick");
+         $('a[name="'+name+'"]').html("В КОРЗИНЕ");
+       if(localStorage.shop==undefined)
+       {
+           localStorage.shop=""
+       }
+       else
+       {
+ arr = name.split(',')
+data=[]
+
+if(localStorage.shop.indexOf(arr[0])==-1)
+{
+var data2={
+                 iditem : arr[0],
+                price : arr[1],
+                name : arr[2],
+                disc : arr[3]           
+}
+string=JSON.stringify(data2)
+if (localStorage.shop=="")
+    {
+        
+    }
+        else
+        {
+            string2=JSON.parse(localStorage.shop)
+            for(i in string2){
+            data.push(string2[i])
+            }
+        }
+        
+data.push(string)
+data=JSON.stringify(data)
+localStorage.shop=data
+//localStorage.shop=data
+//localStorage.shop.push(data)
+//alert("Товар "+arr[2]+ " добавлен в корзину!")
+}
+        else
+            {
+               // alert("Товар уже добавлен!")
+            }
+}
+    }
+// Проверка корзины задержка для загрузки формы
+   function shoping_check2(){
+    setTimeout(shoping_check, 2000);
+   }
+    // Корзина
+  function  shoping_check()
+      {
+          summa=0;
+     // localStorage.shop=""
+if(localStorage.shop=="")
+    {
+        alert("Корзина пуста!")
+    }
+          else {
+string=JSON.parse(localStorage.shop)
+
+            
+           document.getElementById("shoping_check").innerHTML=""; 
+             
+             $("#shoping_check").append('<h3>Покупки</h3><ul class="responsive_table"><li class="table_row"><div class="table_section_14">Номер лота</div><div class="table_section_14">Имя</div><div class="table_section_14">Цена</div><div class="table_section_14">Действие</div></li>');   
+            summa=0;
+            for (i = 0; i < string.length; i++){
+                string2=JSON.parse(string[i])
+              
+                summa=summa + Number(string2.price);
+                
+        $("#shoping_check").append('<li class="table_row"><div class="table_section_14">'+string2.iditem+'</div><div class="table_section_14">'+string2.name+'</div><div class="table_section_14">'+string2.price+' рублей</div><div class="table_section_14"><a href="#" name="'+string2.iditem+'" onClick="shoping_del(this.name)"> Удалить</a></div></li>');    
+                
+    
+           
+            }
+            
+           <!-- class="buy_now" onClick="shoping_final() -->
+             $("#shoping_check").append('<li class="table_row"><div class="table_section_14">&nbsp;</div><div class="table_section_14">&nbsp;</div><div class="table_section_14">Итого: '+summa+' рублей</div><div class="table_section_14"><a href="#"  onClick="shoping_final()"><b>ОФОРМИТЬ ЗАКАЗ</b></a></div></li></ul>');  
+
+          }
+    
+    
+    }
+    
+    // Функция удаления товара из корзины
+      function  shoping_del(del_name)
+{
+
+  // alert("Товар "+del_name+ " удален!")
+   string=JSON.parse(localStorage.shop)
+   for (i = 0; i < string.length; i++){
+              
+              if(string[i].indexOf(del_name)==-1)
+{
+}
+       
+       else{
+         string.splice(i, 1);
+       }
+   }
+   string=JSON.stringify(string)
+  localStorage.shop=string;
+ shoping_check()  
+}
+    
+    
+    
+    // Оформление заказа.
+        function  shoping_final()
+{
+
+
+    var data ={
+                   type : 'final',
+                   userid : localStorage.userid,
+                   zakaz : localStorage.shop
+               }
+                   
+  alert("Заказ отправлен!")             
+      socket.emit('eventServer', { data: data }); 
+localStorage.shop="";
+window.location.href="index.html";
+}
+    
+        
+       // Настройки личного кабинета 
+    function lksitting(type)
+    {
+        
+         if(type=="enter")
+{
+
+   url = "http://95.213.208.74:8888/query?type=sitting&userid="+localStorage.userid+""
+
+
+ $.ajax({
+            url: url,
+            dataType: "html",
+            success: function(data) {
+     string=data;
+            string = JSON.parse(string);
+        
+       
+        var form = document.forms.AddressForm; // можно document.forms[0]
+form.elements.FIO.placeholder=string.data.post_fio
+form.elements.email.placeholder=string.data.post_email
+form.elements.country.placeholder=string.data.post_country
+form.elements.street.placeholder=string.data.post_street
+form.elements.home.placeholder=string.data.post_home
+form.elements.flat.placeholder=string.data.post_flat
+form.elements.region.placeholder=string.data.post_obl
+form.elements.city.placeholder=string.data.post_city
+form.elements.index.placeholder=string.data.post_index
+
+        
+var form = document.forms.PodpiskaForm;
+            
+   form.elements.news.checked=Number(string.data.pod_news)
+   form.elements.boys01.checked=Number(string.data.pod_boys01)
+   form.elements.boys15.checked=Number(string.data.pod_boys15)
+   form.elements.boys510.checked=Number(string.data.pod_boys510)
+   form.elements.boys10.checked=Number(string.data.pod_boys10)
+   form.elements.girls01.checked=Number(string.data.pod_girls01)
+   form.elements.girls15.checked=Number(string.data.pod_girls15)
+   form.elements.girls510.checked=Number(string.data.pod_girls510)
+   form.elements.girls10.checked=Number(string.data.pod_girls10)
+   form.elements.school.checked=Number(string.data.pod_school)
+   form.elements.vchildclose.checked=Number(string.data.pod_vchildclose)
+   form.elements.baboshuz.checked=Number(string.data.pod_baboshuz)
+   form.elements.pristroy.checked=Number(string.data.pod_pristroy)
+   form.elements.toys.checked=Number(string.data.pod_toys)
+   form.elements.books.checked=Number(string.data.pod_books)
+   form.elements.mamynext.checked=Number(string.data.pod_mamynext)
+   form.elements.prochee.checked=Number(string.data.pod_prochee)
+   form.elements.woomen.checked=Number(string.data.pod_woomen)
+   form.elements.man.checked=Number(string.data.pod_man)
+   form.elements.vdliavzroslih.checked=Number(string.data.pod_vdliavzroslih)
+   form.elements.shuzdlvzroslih.checked=Number(string.data.pod_shuzdlvzroslih)
+      
+
+   var form = document.forms.IdvkForm;
+             form.elements.idvk.placeholder=localStorage.userid
+        }
+     });
+    
+}
+
+        
+         else if(type==111)
+           {
+
+       url = "http://95.213.208.74:8888/query?type=sitting&userid="+localStorage.userid+""
+
+
+ $.ajax({
+            url: url,
+            dataType: "html",
+            success: function(data) {
+     string=data;
+            string = JSON.parse(string);
+            
+ var form = document.forms.PostForm;
+             form.elements.email.value=string.data.user_email
+             form.elements.telnumber.value=string.data.telnumber
+             form.elements.FIO.value=string.data.post_fio
+             form.elements.country.value=string.data.post_country
+             form.elements.street.value=string.data.post_street
+             form.elements.home.value=string.data.post_home
+             form.elements.flat.value=string.data.post_flat
+             form.elements.region.value=string.data.post_region
+             form.elements.city.value=string.data.post_city
+             form.elements.index.value=string.data.post_index
+            }
+ });
+        
+           }
+      else if(type=="address")
+           {
+           var form = document.forms.AddressForm;
+  
+             
+               var data ={
+                   type : 'sittingchange',
+                   userid : localStorage.userid,
+                   post_FIO : form.elements.FIO.value,
+                   post_email : form.elements.email.value,
+                   post_country : form.elements.country.value,
+                   post_street : form.elements.street.value,
+                   post_home : form.elements.home.value,
+                   post_flat : form.elements.flat.value,
+                   post_region : form.elements.region.value,
+                   post_city : form.elements.city.value,
+                   post_index : form.elements.index.value
+               }
+               
+               socket.emit('eventServer', { data: data });
+  
+           }
+         
+       else if(type=="podpiska")
+           {
+        
+               
+               var form = document.forms.PodpiskaForm;
+               
+               var data2={
+                 pod_news : form.elements.news.checked,
+                pod_boys01 : form.elements.boys01.checked,
+                pod_boys15 : form.elements.boys15.checked,
+                pod_boys510 : form.elements.boys510.checked,
+                pod_boys10 : form.elements.boys10.checked,
+                pod_girls01 : form.elements.girls01.checked,
+                pod_girls15 : form.elements.girls15.checked,
+               pod_girls510 : form.elements.girls510.checked,
+               pod_girls10 : form.elements.girls10.checked,
+               pod_school : form.elements.school.checked,
+               pod_vchildclose : form.elements.vchildclose.checked,
+               pod_baboshuz : form.elements.baboshuz.checked,
+               pod_pristroy : form.elements.pristroy.checked,
+               pod_toys : form.elements.toys.checked,
+               pod_books : form.elements.books.checked,
+               pod_mamynext : form.elements.mamynext.checked,
+               pod_prochee : form.elements.prochee.checked,
+               pod_woomen : form.elements.woomen.checked,
+               pod_man : form.elements.man.checked,
+               pod_vdliavzroslih : form.elements.vdliavzroslih.checked,
+               pod_shuzdlvzroslih : form.elements.shuzdlvzroslih.checked   
+               }
+              
+               for (var i in data2){
+               if(data2[i]==true)
+                   {
+                       data2[i]=1
+                   }
+               else
+                   {
+                       data2[i]=0
+                   }
+               }
+                    var data ={
+                   type : 'podpiskachange',
+                   userid : localStorage.userid,
+                   pod : data2
+               }
+                   
+               
+      socket.emit('eventServer', { data: data });            
+             
+               for(key in data2)
+                   {
+                       if(data2[key]==1){
+                               //Add tag
+window.plugins.PushbotsPlugin.tag(key);
+                       }
+                       else
+                           {
+//Remove tag
+window.plugins.PushbotsPlugin.untag(key);
+
+                           }
+                   }
+               window.location.href="index.html";
+           }
+        else
+            {
+                
+            }
+    }
+    // Отправка сообщения
+function callback()
+    {
+
+        select_mail="http://dolce-vita.spb.ru/mail.php";
+            var form = document.forms.MailForm; // можно document.forms[0]
+               var name = form.elements.name;
+               var email = form.elements.email;
+               var msg = form.elements.msg;
+        
+
+         $.ajax({
+            url:  select_mail,
+    	type: "POST",
+    	dataType: "html",
+         data: ({type: "mail",
+                 a0: name.value,
+                 a1: email.value,
+                 a2: msg.value 
+    	}),
+    //	beforeSend: funcBefore,
+    	success: function(data) {
+string=data;
+        
+        }
+              });
+              
+    } 
+      //Выход  
+function logout()
+        {
+            localStorage.token= "undefined";
+            alert("Вы вышли из аккаунта!")
+        }
+     //Авторизация вконтакте   
+        function vkauth()
+        {
+            alert("Вы будете перенаправлены на страницу авторизации Вконтакте!")
+            url="https://oauth.vk.com/authorize?client_id=5939397&display=page&redirect_uri=http://dolce-vita.spb.ru/ws/get&scope=market,offline&response_type=code&v=5.63&state="+string.ssid+""
+            window.open(url)
+        }
+    
+        
+
+      
+      
+        podpiski()
+    
+    </script>
+
+
+    
+  </body>
+</html>
